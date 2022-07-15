@@ -7,20 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p { /* Tag selector */
+        p { /* Tag selector - 0001 */
             color: dodgerblue;
             font-size: 30px;
         }
 
-        #heading { /* Id selector */
+        h1, h2, h3 { /* Tag selector - 0001 */
+            font-size: 100px;
+            background-color: aquamarine;
+        }
+
+        .green-text {    /* Class selector - 0010 */
+            color: green;
+        }
+
+        .pink-text {
+            color: pink;
+        }
+
+        #heading { /* Id selector - 0100 */
             color: blueviolet;
             font-size: 50px;
         } 
-        /* DRY - Do not repeat yourself*/
 
-        .green-text {    /* Class selector */
-            color: green;
-        }
+        /* inline style - 1000 */
+  
+
     </style>
 </head>
 
@@ -30,9 +42,10 @@
     <p>Lorem ipsum dolor <span class="green-text">sit</span> amet, consectetur adipisicing elit.
     </p>
         <article>
-            <h2 id="heading">SubHeading</h2>
-            <p>Lorem ipsum dolor sit amet <span class="green-text"> consectetur adipisicing elit </span>. Non ducimus ad modi et mollitia perferendis dolor esse facere quod consectetur! <span>Aut modi quasi aliquam maiores omnis doloribus eum distinctio, est error voluptate</span></p>
+            <h2 id="heading" style="color: red;">SubHeading</h2>
+            <p>Lorem ipsum dolor sit amet <span class="green-text pink-text"> consectetur adipisicing elit </span>. Non ducimus ad modi et mollitia perferendis dolor esse facere quod consectetur! <span>Aut modi quasi aliquam maiores omnis doloribus eum distinctio, est error voluptate</span></p>
         </article>
+        <h3> Sub-sub-heading</h3>
 </body>
 
 </html>
