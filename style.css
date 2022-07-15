@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Rubik Moonrocks';
+    src: url("./fonts/RubikMoonrocks-Regular.ttf") format("opentype")
+}
+
+.green-text {
+    color: green;
+}
+
+h1 {
+    font-size: 50px;
+
+}
+
+p {
+    font-size: 40px; /* em - відносна одиниця виміру. 1em - один розмір шрифту */
+    line-height: 1.2em;
+    text-align: justify;
+    text-transform:capitalize;
+}
+
+button {
+    text-transform:capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(65, 7, 65);
+    font-size: 30px;
+    font-family: 'Rubik Moonrocks', cursive;
+}
