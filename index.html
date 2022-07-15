@@ -7,18 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p {
-            /* Colors */
-            /* color: grey;  -- word */
-            /* color: rgb(23, 123, 100); -- rgb */
-            /* color: rgba(100, 150, 27, 1); -- rgba */
-            /* color: #458032; -- hexadecimal */
+        p { /* Tag selector */
             color: dodgerblue;
-
-            /* Sizes */
-            /* font-size: 20px;  1px = 1/96 inch -- absolut size */
-            /* font-size: 20pt; -- typographic punkts */
             font-size: 30px;
+        }
+
+        #heading { /* Id selector */
+            color: blueviolet;
+            font-size: 50px;
+        } 
+        /* DRY - Do not repeat yourself*/
+
+        .green-text {    /* Class selector */
+            color: green;
         }
     </style>
 </head>
@@ -26,11 +27,11 @@
 <body title="Hello world">
 
     <h1>Heading</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    <p>Lorem ipsum dolor <span class="green-text">sit</span> amet, consectetur adipisicing elit.
     </p>
         <article>
-            <h2>SubHeading</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ducimus ad modi et mollitia perferendis dolor esse facere quod consectetur! Aut modi quasi aliquam maiores omnis doloribus eum distinctio, est error voluptate.</p>
+            <h2 id="heading">SubHeading</h2>
+            <p>Lorem ipsum dolor sit amet <span class="green-text"> consectetur adipisicing elit </span>. Non ducimus ad modi et mollitia perferendis dolor esse facere quod consectetur! <span>Aut modi quasi aliquam maiores omnis doloribus eum distinctio, est error voluptate</span></p>
         </article>
 </body>
 
