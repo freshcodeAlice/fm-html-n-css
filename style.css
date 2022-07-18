@@ -1,31 +1,20 @@
-@font-face {
-    font-family: 'Rubik Moonrocks';
-    src: url("./fonts/RubikMoonrocks-Regular.ttf") format("opentype")
+.main-article{
+    font-size: 60px;
+    color: rgb(119, 38, 38);
+    border: 2px solid red;
 }
 
-.green-text {
-    color: green;
-}
+.article-header {
 
-h1 {
-    font-size: 50px;
 
 }
 
-p {
-    font-size: 40px; /* em - відносна одиниця виміру. 1em - один розмір шрифту */
-    line-height: 1.2em;
-    text-align: justify;
-    text-transform:capitalize;
+.article-content { /* self rules is more important than inherited */
+color: rgb(130, 21, 39);
+border: unset;
 }
 
-button {
-    text-transform:capitalize;
-}
-
-a {
+.article-link {
     text-decoration: none;
-    color: rgb(65, 7, 65);
-    font-size: 30px;
-    font-family: 'Rubik Moonrocks', cursive;
+    color: inherit;
 }
