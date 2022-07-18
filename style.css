@@ -1,31 +1,14 @@
-/*block and inline element*/
+body {
+    height: 500px;
+    margin: 0;
+}
 
-/* calculating sizes: 
-width = content + paddings + borders;
-*/
 
 div {
-    display: inline;
-}
-
-.image {
-    width: 300px;
-    box-sizing: border-box; /* Content sizes changes relative to general sizes*/
-    border: 2px solid blue;
-
-    padding: 10px;
-}
-
-
-p {
-    font-size: 30px;
-    border: 2px solid blue;
-    padding: 5px;
-}
-
-span {
-    color: green;
-    display: inline-block;
-    width: 1000px; /* Doesn`t work on inline elements */
-    padding: 50px; /* Partly works - only for left-right*/
+    width: 50%;
+    box-sizing: border-box;
+    height: 20%;
+    border: 2px solid black;
+    background-color: blueviolet;
+    margin: 0 auto;
 }
