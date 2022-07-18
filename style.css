@@ -7,29 +7,20 @@ width = content + paddings + borders;
 .image {
     width: 300px;
     box-sizing: border-box; /* Content sizes changes relative to general sizes*/
-    /* border: 5px dashed blue; */
-    border-top: 2px dotted black;
-    border-right: 3px solid green;
-    border-bottom: 4px dashed brown;
-    border-left: 5px double violet;
+    border: 2px solid blue;
 
-
-    /* padding: top right bottom left */
-    padding: 5px 4px 3px 1px;
-
-    /* padding: top left-right bottom; */
-    padding: 5px 3px 2px;
-
-    /* padding: top-bottom left-right; */
-    padding: 5px 2px;
-
-    /* padding: all; */
     padding: 10px;
+}
 
-    /*  */
 
-    padding-top:5px;
-    padding-left:5px;
-    padding-right:5px;
-    padding-bottom:5px;
+p {
+    font-size: 30px;
+    border: 2px solid blue;
+    padding: 5px;
+}
+
+span {
+    color: green;
+    width: 1000px; /* Doesn`t work on inline elements */
+    padding: 50px; /* Partly works - only for left-right*/
 }
