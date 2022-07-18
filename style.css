@@ -4,6 +4,10 @@
 width = content + paddings + borders;
 */
 
+div {
+    display: inline;
+}
+
 .image {
     width: 300px;
     box-sizing: border-box; /* Content sizes changes relative to general sizes*/
@@ -21,6 +25,7 @@ p {
 
 span {
     color: green;
+    display: inline-block;
     width: 1000px; /* Doesn`t work on inline elements */
     padding: 50px; /* Partly works - only for left-right*/
 }
