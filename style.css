@@ -1,13 +1,11 @@
 /* Overflow */
 
-.outer {
-width: 200px;
-height: 200px;
-border: 1px solid black;
-overflow: scroll;
-overflow-x: hidden;
-}
-
-.inner {
-border: 1px solid red;
+button {
+    /* width: 200px; */
+    min-width: 60px;
+    max-width: 300px;
+    height: 60px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
