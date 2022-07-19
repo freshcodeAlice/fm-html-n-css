@@ -1,31 +1,13 @@
-/*  { /* smallest weight */
-  /*  background-color: rgb(47, 188, 186);
-} */
+/* Overflow */
 
-body {
-    background-image: url('https://unblast.com/wp-content/uploads/2018/10/Sky-Stars-Pattern.jpg');
-    height: 10000px;
-    background-attachment: fixed;
-}
-
-.div1 {
+.outer {
 width: 200px;
 height: 200px;
 border: 1px solid black;
-margin-bottom: 20px;
-background-color: violet;
+overflow: scroll;
+overflow-x: hidden;
 }
 
-.div2 {
-width: 300px;
-height: 300px;
-border: 2px solid red;
-background-image: url('./images/dlya_dushi_35_13130628.jpg');
-background-size: cover;
-background-position: top;
-background-color: #0000008c;
-background-blend-mode: overlay;
+.inner {
+border: 1px solid red;
 }
-
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/border-image */
-/* Border image is for your self lerning */
