@@ -1,24 +1,27 @@
-body {
-    background-color: brown;
+div {
+ width: 200px;
+ height: 200px;
+ border: 3px solid red;
+ color: white;
+ font-size: 50px;
+ text-align: center;
+ background-color: blueviolet;
+ display: inline-block;
 }
 
 
-img {
-    width: 200px;
-    height: 150px;
-    border: 2px solid black;
+.div-1 {
+display: none;
 }
 
-.div-img {
-    width: 200px;
-    height: 150px;
-    border: 2px solid black;
-    background-image: url('./images/dlya_dushi_35_13130628.jpg');
-    background-size: cover;
+.div-2 {
+    opacity: 0;
 }
 
-/*
-1. Контент має бути у html. Скрінрідери проігнорують фонову картинку і навіть її не побачать
-2. Формат друку прибирає фоновий колір і фонові картинки
+.div-3 {
+    visibility: hidden;
+}
 
-*/
+.div-4 {
+    
+}
