@@ -1,8 +1,6 @@
 li {
+    /* list-style: type position image */
     list-style-type: disc;
-}
-
-ul {
-    margin-top: 50px;
-    padding: 20px;
+    list-style-position: outside;
+    list-style-image: url('./images/corn.png');
 }
