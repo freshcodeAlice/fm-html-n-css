@@ -1,6 +1,9 @@
-li {
-    /* list-style: type position image */
-    list-style-type: disc;
-    list-style-position: outside;
-    list-style-image: url('./images/corn.png');
+table, td {
+    border: 1px solid rgb(117, 117, 117);
+    border-collapse: collapse;
+}
+
+
+thead {
+    background-color: lightgrey;
 }
