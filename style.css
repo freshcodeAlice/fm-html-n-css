@@ -1,27 +1,8 @@
-div {
- width: 200px;
- height: 200px;
- border: 3px solid red;
- color: white;
- font-size: 50px;
- text-align: center;
- background-color: blueviolet;
- display: inline-block;
+li {
+    list-style-type: disc;
 }
 
-
-.div-1 {
-display: none;
-}
-
-.div-2 {
-    opacity: 0;
-}
-
-.div-3 {
-    visibility: hidden;
-}
-
-.div-4 {
-    
+ul {
+    margin-top: 50px;
+    padding: 20px;
 }
