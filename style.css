@@ -1,8 +1,19 @@
-article ~ p {
-    color: blue;
+.container {
+    border: 2px solid black;
+    background-color: aquamarine;
 }
 
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
 
-article ~ div > p {
-    color: red;
+/* Правила селектора, щоб між всіма іконками була однакова відстань, а в першої іконки не було відстані від батьківського елемента
+*/
+
+.icon ~ .icon {
+    margin-left: 10px;
 }
