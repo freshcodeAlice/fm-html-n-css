@@ -1,11 +1,8 @@
-p {
-    color: black;
-}
-
-#id > p {
-    color: green;
-}
-
-#id > h2 {
+article ~ p {
     color: blue;
+}
+
+
+article ~ div > p {
+    color: red;
 }
