@@ -1,37 +1,11 @@
-body {
-    --main-color: #087813; /* variable declaration */
-    --secondary-color: #57b360;
-    --common-padding: 16px;
+p {
+    color: black;
 }
 
-/*  
---variable-name: value  <---- declaration
-var(--variable-name)      <----- usage
-calc()
-*/
-
-.img {
-    display: inline-block;
-    border: 4px solid var(--secondary-color);
-    padding: var(--common-padding);
+#id > p {
+    color: green;
 }
 
-.block {
-    height: calc(300px / 2);
-    border: 2px solid red;
-    background-color: var(--main-color);
-    display: inline-block;
-    margin: calc(var(--common-padding) / 2);
-}
-
-.text {
-    border: 1px solid black;
-    display: inline-block;
-    color: var(--main-color);
-    font-size: var(--common-padding);
-    padding: var(--common-padding);
-}
-
-.width-200 {
-    width: 200px;
+#id > h2 {
+    color: blue;
 }
