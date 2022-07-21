@@ -31,16 +31,17 @@
 }
 
 
-.page-link:focus{
-    border: 5px solid green;
-}
 
-p:focus {
+.page-link:focus {
     border: 4px solid red;
 }
 
-.page-link:hover:not(button) {
+.page-link:hover {
     background-color: dodgerblue;
     color: bisque;
 }
 
+.page-link:active {
+    background-color: orange;
+    color: black;
+}
