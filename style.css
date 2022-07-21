@@ -25,7 +25,16 @@
     color: blueviolet;
 }
 
-.page-link:hover {
+
+.page-link:not(.not-this){
+    border: 2px double red;
+}
+
+
+
+
+.page-link:hover:not(button) {
     background-color: dodgerblue;
     color: bisque;
 }
+
