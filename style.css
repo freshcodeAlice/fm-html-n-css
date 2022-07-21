@@ -1,12 +1,13 @@
-h2 ~ p {
-    color: blue;
+div {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    color: darkmagenta;
+    font-size: 40px;
+    text-align: center;
 }
 
-h2 + p {
-    color: red;
-}
-
-
-div.box {
-color: rgb(116, 6, 24)
+div:hover {
+    background-color: darkmagenta;
+    color: bisque;
 }
