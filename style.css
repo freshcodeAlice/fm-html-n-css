@@ -23,13 +23,14 @@ body {
 .inner {
     text-align: center;
     font-size: 40px;
-    /* width: 80px; */
-    /* height: 80px; */
+    width: 80px;
+     height: 80px;
     background-color: forestgreen;
     border: 1px solid black;
+    position: fixed;
 }
 
-
+/* 
 .div1 {
 
 }
@@ -43,11 +44,35 @@ body {
 .div3 {
     position: fixed;
     top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
 }
 
 .div4 {
 
+} */
+
+
+/*
+Зробити чотири блоки з різним фоновим кольором, по одному в кожен бік екрану
+один у верхньому лівому
+другий у верхньому правому
+третій у нижньому лівому
+четвертий у нижньому правому
+*/
+
+
+
+.right {
+    right: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
 }
