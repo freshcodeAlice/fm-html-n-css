@@ -12,12 +12,14 @@ body {
     height: 800px;
     width: 80%;
     margin: 0 auto;
+
 }
 
 .wrapper {
     background-color: dodgerblue;
     width: 80%;
     height: 800px;
+    position: relative;
 }
 
 .inner {
@@ -27,12 +29,13 @@ body {
      height: 80px;
     background-color: forestgreen;
     border: 1px solid black;
-    position: fixed;
 }
 
-/* 
-.div1 {
 
+.div1 {
+position: absolute;
+top: 200px;
+right: 0;
 }
 
 .div2 {
@@ -43,36 +46,10 @@ body {
 
 .div3 {
     position: fixed;
-    top: 0;
+    top: 50%;
+    left: 0;
 }
 
 .div4 {
 
-} */
-
-
-/*
-Зробити чотири блоки з різним фоновим кольором, по одному в кожен бік екрану
-один у верхньому лівому
-другий у верхньому правому
-третій у нижньому лівому
-четвертий у нижньому правому
-*/
-
-
-
-.right {
-    right: 0;
-}
-
-.left {
-    left: 0;
-}
-
-.top {
-    top: 0;
-}
-
-.bottom {
-    bottom: 0;
 }
