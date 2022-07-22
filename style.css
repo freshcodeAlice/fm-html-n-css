@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    --z-index: 10;
 }
 
 body {
@@ -19,7 +20,6 @@ body {
     background-color: dodgerblue;
     width: 80%;
     height: 800px;
-    position: relative;
 }
 
 .inner {
@@ -33,23 +33,27 @@ body {
 
 
 .div1 {
-position: absolute;
-top: 200px;
-right: 0;
+position: relative;
+top: 20px;
+left: 20px;
+z-index: 2;
 }
 
 .div2 {
-    position: relative;
-    top: 10px;
-    left: 20px;
+position: fixed;
+top: -15px;
+z-index: 55555; /* BAD PRACTICE */
 }
 
 .div3 {
-    position: fixed;
-    top: 50%;
-    left: 0;
+position: relative;
+top: -25px;
+left: 5px;
+z-index: calc(var(--z-index) + 1); /* Good practice */
 }
 
 .div4 {
-
+position: relative;
+top: -40px;
+left: 15px;
 }
