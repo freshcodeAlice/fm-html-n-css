@@ -1,37 +1,15 @@
-div {
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    display: inline-block;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
 }
 
 
-/* 
-Колір тла:
-
-1 - червоний
-2 - зелений
-3 - синій
-4 - зелений
-5 - червоний
-6 - синій
-7 - червоний
-8 - зелений
-
-*/
-
-   div:nth-child(2n+1) {
-        background-color: red;
-    }
-
-    div:nth-child(2n) {
-        background-color: green;
-    }
-
-    div:nth-child(3n) {
-        background-color: blue;
-    }
-    
-
-
+.paragraph {
+    position: relative;
+    left:50px;
+    top:50px;
+}
 
