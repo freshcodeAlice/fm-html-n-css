@@ -35,15 +35,21 @@ font-size: 0;
     display: inline-block;
     list-style-type: none;
     padding: 10px 20px;
-    border: 1px solid black;
+    box-sizing: border-box;
+    border-bottom: 3px solid transparent;
 
-
-
+    /* TRANSITION */
+    /* transition-delay: 0.5s;
+    transition-duration: 1s;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out; */
+    transition: all 500ms ease-in-out;
 }
 
 .list-item:hover {
     background-color: black;
     color:white;
+    border-bottom: 3px solid pink;
     -webkit-box-shadow: 0px -2px 47px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px -2px 47px -8px rgba(0,0,0,0.75);
     box-shadow: 0px -2px 47px -8px rgba(0,0,0,0.75);
@@ -59,9 +65,38 @@ font-size: 0;
 .link {
     text-decoration: none;
     outline: 0;
+
 }
 
 .link:active {
     color: blueviolet;
 
 }
+
+
+.parent-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+
+.box {
+    width: 0;
+    height: 0;
+    background-color: blueviolet;
+    border: 1px solid black;
+    /* opacity: 1; */
+    transition: all 0.5s ease;
+}
+
+.parent-box:hover .box {
+    width: 200px;
+    height: 200px;
+    /* opacity: 0; */
+}
+
+
+/*
+Зробити нижню "рамку" (підкреслення) елементу li за наведення мишею (hover), яка плавно збільшується від 0 до 100% за допомогою transition  
+*/
