@@ -7,3 +7,8 @@ p::first-letter {
     color: red;
     font-style: italic;
 }
+
+p::first-line{
+    background-color: yellow;
+    color: red;
+}
