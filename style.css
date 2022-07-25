@@ -1,39 +1,9 @@
-.nav-list {
-margin: 0;
-padding: 0;
-font-size: 0;
+p {
+    color: blue;
 }
 
-.list-item {
-    list-style-type: none;
-    display: inline-block;
-    position: relative;
-    background-color: rgb(250, 97, 41);
-    padding: 20px;
-}
-.link {
-
-    color: white;
-    text-decoration: none;
+p::first-letter {
     font-size: 20px;
-    /* padding: 20px; */
-    width: 100%;
-}
-
-.sub-nav-list {
-    position: absolute;
-    top:40px;
-    left: -20px;
-    display: block;
-}
-
-.sub-list-item {
-    display: none;
-    list-style-type: none;
-    background-color: rgb(250, 97, 41);
-    padding: 20px;
-}
-
-.list-item:hover .sub-list-item {
-    display: block;
+    color: red;
+    font-style: italic;
 }
