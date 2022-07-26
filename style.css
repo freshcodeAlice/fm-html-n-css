@@ -5,12 +5,14 @@
 
 .container {
     border: 1px solid black;
-    /* min-height: 500px; */
+    min-height: 50vh;
+    max-height: 90vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: flex-end;
-    align-items: flex-end;
+    /* align-items: center; */
     flex-wrap: wrap-reverse;
+    align-content: flex-start;
 }
 
 .item {
