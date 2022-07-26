@@ -1,33 +1,24 @@
-.text {
-    color: blue;
-    margin: 5%;
-    font-size: 30px;
-}
-
-.container::before {
-    background: url('./images/border-up.jpg');
-    display: block;
-    content: '';
-    width: 100vw;
-    height: 20vh;
-    background-repeat: repeat-x;
-}
-
-.container::after {
-    background: url('./images/border-down.jpg');
-    display: block;
-    content: '';
-    width: 100vw;
-    height: 20vh;
-    background-repeat: repeat-x;
+* {
+    box-sizing: border-box;
 }
 
 
-.text::first-letter {
-    font-size: 2.2em;
-    font-family: 'Luxurious Script';
-}
-.text::first-line {
-    background-color: pink;
+.container {
+    border: 1px solid black;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+
 }
 
+.item {
+    /* width: 50px;
+    height: 50px; */
+    background-color: teal;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    border: 2px solid red;
+}
