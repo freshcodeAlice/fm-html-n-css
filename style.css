@@ -5,20 +5,26 @@
 
 .container {
     border: 1px solid black;
-    min-height: 500px;
+    /* min-height: 500px; */
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
 
 }
 
 .item {
-    /* width: 50px;
-    height: 50px; */
+    width: 50px;
+    height: 50px;
     background-color: teal;
     color: white;
     font-size: 2em;
     text-align: center;
     border: 2px solid red;
+
+}
+
+
+.fourth {
+    margin-left: auto;
 }
