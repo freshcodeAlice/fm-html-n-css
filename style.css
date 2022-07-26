@@ -8,13 +8,13 @@
     /* min-height: 500px; */
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap-reverse;
 }
 
 .item {
-    width: 50px;
+    width: 70px;
     height: 50px;
     background-color: teal;
     color: white;
@@ -22,9 +22,4 @@
     text-align: center;
     border: 2px solid red;
 
-}
-
-
-.fourth {
-    margin-left: auto;
 }
