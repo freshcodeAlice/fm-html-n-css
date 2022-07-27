@@ -1,12 +1,13 @@
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 
 .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 600px;
     border: 2px solid black;
     /* min-height: 300px; */
 }
@@ -18,7 +19,8 @@
     color: white;
     background-color: teal;
     border: 2px solid red;
-    flex-basis: 150px;
+    flex-basis: 70px;
+    flex-grow: 1;
 }
 
 .container .item:nth-child(1) {
@@ -26,7 +28,7 @@
 }
 
 .container .item:nth-child(2) {
-
+    flex-grow: 0.5;
 }
 
 
