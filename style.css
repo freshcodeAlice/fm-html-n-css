@@ -6,8 +6,8 @@
 .container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 600px;
+    /* flex-wrap: wrap; */
+    width: 400px;
     border: 2px solid black;
     /* min-height: 300px; */
 }
@@ -19,8 +19,8 @@
     color: white;
     background-color: teal;
     border: 2px solid red;
-    flex-basis: 70px;
-    flex-grow: 1;
+    flex-basis: 100px;
+    flex-shrink: 1;
 }
 
 .container .item:nth-child(1) {
@@ -28,7 +28,7 @@
 }
 
 .container .item:nth-child(2) {
-    flex-grow: 0.5;
+    flex-shrink: 0.5;
 }
 
 
