@@ -13,3 +13,7 @@ margin: 0 auto;
     content: '*';
     color: red
 }
+
+textarea {
+    resize: none;
+}
