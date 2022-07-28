@@ -8,3 +8,8 @@ margin: 0 auto;
 /* .form input {
     display: block;
 } */
+
+.required::after {
+    content: '*';
+    color: red
+}
