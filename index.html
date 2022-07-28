@@ -63,16 +63,16 @@
 
         <fieldset>
             <legend>Choose your city</legend>
-       <select name="city">
-        <option value="Kyiv">Kyiv</option>
-        <optgroup label="Dnipropetrovska obl.">
-        <option value="Dnipro">Dnipro</option>
-        <option value="Nikopol">Nikopol</option>
-        <option value="Kryvyi-Rig">Kryvyi Rig</option>
-        </optgroup>
-        <option value="Kharkiv">Kharkiv</option>
-        <option value="Zaporizhzhia">Zaporizhzhia</option>
-       </select>
+            <input type="text" name="city" list="city-list"/>
+
+            <datalist id="city-list">
+                    <option value="Kyiv"></option>
+                    <option value="Dnipro"></option>
+                    <option value="Nikopol"></option>
+                    <option value="Kryvyi-Rig"></option>
+                    <option value="Kharkiv"></option>
+                    <option value="Zaporizhzhia"></option>
+            </datalist>
         </fieldset>
         <button type="submit" >Sign In</button>
     </form>
