@@ -17,3 +17,31 @@ margin: 0 auto;
 textarea {
     resize: none;
 }
+
+input:required {
+
+}
+
+input:optional {
+
+}
+input:checked {
+background-color: blueviolet;
+}
+
+input:disabled {
+
+}
+
+input:valid {
+
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input::placeholder {
+    background-color: pink;
+}
