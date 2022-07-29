@@ -5,6 +5,10 @@ max-width: 200px;
 margin: 0 auto;
 }
 
+.form * {
+    margin-top: 10px;
+}
+
 /* .form input {
     display: block;
 } */
@@ -54,6 +58,12 @@ input:required {
 
 }
 
+.some-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 input:optional {
 
 }
@@ -77,5 +87,4 @@ input:invalid {
 
 input::placeholder {
     /* background-color: pink; */
-
 }
