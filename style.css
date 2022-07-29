@@ -8,14 +8,29 @@ body {
     width: 400px;
     display: flex;
     margin: 15vh auto;
+    /* overflow: hidden; */
 }
 .user-img {
     width: 200px;
     height: 200px;
     object-fit: cover;
-
-    clip-path: polygon(0 0, 0% 100%, 100% 46%);
+    transition: all 1s ease;
 }
+
+.user-img:hover {
+   /* transform: scale(2,2); */
+/* transform: rotate(300deg);  angle is degrees */
+   /* transform: rotate3d(20,60,35,90deg); */
+   /* transform: rotateX(360deg); */
+   /* transform: rotateY(50deg); */
+   /* transform: translate(50px,-50px) */
+
+   /* transform: skew(20deg,30deg); */
+   transform:matrix(0.20,-1.30,1.00,-1.60,-33,0);
+   -ms-transform:matrix(0.20,-1.30,1.00,-1.60,-33,0);
+   -webkit-transform:matrix(0.20,-1.30,1.00,-1.60,-33,0);
+}
+
 
 .card {
     display: flex;
