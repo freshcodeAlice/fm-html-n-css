@@ -18,6 +18,22 @@ textarea {
     resize: none;
 }
 
+input {
+    border: none;
+    border-radius: 15px;
+    /* height: 2em; */
+    font-size: 1.3em;
+    padding: 0.1em;
+    padding-left: 0.5em;
+    background-color: pink;
+}
+
+input[list="city-list"] {
+    background-color: blueviolet;
+    color: white;
+}
+
+
 input:required {
 
 }
@@ -33,15 +49,16 @@ input:disabled {
 
 }
 
-input:valid {
+/* input:valid {
 
     border: 2px solid green;
 }
 
 input:invalid {
     border: 2px solid red;
-}
+} */
 
 input::placeholder {
-    background-color: pink;
+    /* background-color: pink; */
+
 }
