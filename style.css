@@ -39,6 +39,17 @@ input[type="text"]{
 }
 
 
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    width: 15px;
+    height: 15px;
+    border-radius: 1px;
+}
+
+
 input:required {
 
 }
@@ -47,7 +58,8 @@ input:optional {
 
 }
 input:checked {
-background-color: blueviolet;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 21%, rgba(2,0,36,1) 39%, rgba(9,16,121,1) 51%, rgba(0,212,255,1) 100%);
 }
 
 input:disabled {
