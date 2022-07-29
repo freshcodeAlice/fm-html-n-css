@@ -33,6 +33,11 @@ input[list="city-list"] {
     color: white;
 }
 
+input[type="text"]{
+    background: url('./images/corn.png') no-repeat scroll 5px 5px;
+    padding-left:30px;
+}
+
 
 input:required {
 
