@@ -10,87 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <form class="form" action="" method="GET">
-        <h2>Sign In</h2>
-        <fieldset>
-            <legend>Auth Info</legend>
-        <label 
-            for="email-form"
-            class="required"
-            >Type your email</label>
-        <input 
-            type="text" 
-            placeholder="example@mail.com" 
-            autofocus id="email-form" 
-            name="email" 
-            pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
-            required
-            />
-        <label class="required" for="password-form">Type your Password</label>
-        <input 
-            type="password" 
-            placeholder="Password" 
-            id="password-form" 
-            name="pass"
-            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
-            required
-        />
-        </fieldset>
-        <input 
-        type="date" 
-        placeholder="Birthday"  
-        name="birthday"
-        />
-        <fieldset>
-            <legend>Choose your gender</legend>
-        <label><input type="radio" value="male" name="gender" checked/> Male </label>
-        <label><input type="radio" value="female" name="gender"/> Female </label>
-        <label><input type="radio" value="nonbinary" name="gender"/> Nonbinary </label>
-        </fieldset>
-        <label><input type="checkbox" name="is-adult"/>Чи є тобі 18 років? </label>
-        <fieldset>
-            <legend>Choose your avatar</legend>
-       <input type="file">
-        </fieldset>
 
-        <fieldset>
-            <legend>Choose your city</legend>
-            <input type="text" name="city" list="city-list"/>
-
-            <datalist id="city-list">
-                    <option value="Kyiv"></option>
-                    <option value="Dnipro"></option>
-                    <option value="Nikopol"></option>
-                    <option value="Kryvyi-Rig"></option>
-                    <option value="Kharkiv"></option>
-                    <option value="Zaporizhzhia"></option>
-            </datalist>
-        </fieldset>
-        <fieldset>
-            <legend>Describe yourself</legend>
-            <textarea row="2"></textarea>
-
-        </fieldset>
-        <progress value="100" max="150"></progress>
-        <meter value="100" max="150"></meter>
-        <button type="submit" >Sign In</button>
-
-
-        <label class="some-label"><input type="checkbox" /> your text here </label>
-
-        <div><input type="checkbox" /> <span>your text here</span> </div>
-    </form>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem exercitationem veritatis consequatur itaque nisi
-        cum odio blanditiis adipisci deleniti provident, dolore tenetur similique eligendi optio repudiandae officiis,
-        nostrum impedit reprehenderit illum repellat, error quod sint vitae pariatur! Nesciunt sed blanditiis similique
-        qui unde corporis ex minus facere saepe, nisi facilis!</p>
+    <section class="card-wrapper">
+        <img src="./images/unnamed.jpg" class="user-img"/>
+        <article class="card">
+            <h3>Name Surname</h3>
+            <div>
+                <div class="icon">Icon</div>
+                <div class="icon">Icon</div>
+            </div>
+        </article>
+    </section>
 
 </body>
 

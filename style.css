@@ -1,90 +1,42 @@
-.form {
-display: flex;
-flex-direction: column;
-max-width: 200px;
-margin: 0 auto;
+body {
+    background-color: lightcoral;
 }
 
-.form * {
-    margin-top: 10px;
+
+.card-wrapper {
+    background-color: white;
+    width: 400px;
+    display: flex;
+    margin: 15vh auto;
+}
+.user-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+    clip-path: polygon(0 0, 0% 100%, 100% 46%);
 }
 
-/* .form input {
-    display: block;
-} */
-
-.required::after {
-    content: '*';
-    color: red
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
-textarea {
-    resize: none;
+.card h3 {
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
-input {
-    border: none;
-    border-radius: 15px;
-    /* height: 2em; */
-    font-size: 1.3em;
-    padding: 0.1em;
-    padding-left: 0.5em;
-    background-color: pink;
+article > div {
+    display: flex;
+    justify-content: space-between;
 }
 
-input[list="city-list"] {
+.icon {
+    width: 50px;
+    height: 20px;
     background-color: blueviolet;
     color: white;
-}
-
-input[type="text"]{
-    background: url('./images/corn.png') no-repeat scroll 5px 5px;
-    padding-left:30px;
-}
-
-
-input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-
-    width: 15px;
-    height: 15px;
-    border-radius: 1px;
-}
-
-
-input:required {
-
-}
-
-.some-label {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-input:optional {
-
-}
-input:checked {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 21%, rgba(2,0,36,1) 39%, rgba(9,16,121,1) 51%, rgba(0,212,255,1) 100%);
-}
-
-input:disabled {
-
-}
-
-/* input:valid {
-
-    border: 2px solid green;
-}
-
-input:invalid {
-    border: 2px solid red;
-} */
-
-input::placeholder {
-    /* background-color: pink; */
+    border: 1px solid black;
 }
