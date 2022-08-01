@@ -9,8 +9,17 @@
 
 /* at-rules, або Директива */
 
-* {
+/* * {
     box-sizing: border-box;
+} */
+
+:root {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: inherit;
 }
 
 
@@ -61,3 +70,20 @@ h1 {
     background-color: yellow;
     margin-top: auto;
 }
+
+ul {
+    font-size: 0;
+}
+
+li {
+    display: inline-block;
+    background-color: red;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+/* 
+1em = 1 parent font-size
+rem - relative em (root em)
+1rem = 1 font-size root
+*/
