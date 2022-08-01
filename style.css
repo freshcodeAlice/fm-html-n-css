@@ -7,15 +7,9 @@
     src: url('./fonts/RubikMoonrocks-Regular.ttf');
 }
 
-/* at-rules, або Директива */
-
-/* * {
-    box-sizing: border-box;
-} */
-
 :root {
     box-sizing: border-box;
-    font-size: 16px;
+    /* font-size: 16px; */
 }
 
 * {
@@ -26,7 +20,7 @@
 body{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
 
 }
 
@@ -72,18 +66,49 @@ h1 {
 }
 
 ul {
-    font-size: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 li {
-    display: inline-block;
     background-color: red;
     padding: 10px;
     font-size: 1.5rem;
 }
 
-/* 
-1em = 1 parent font-size
-rem - relative em (root em)
-1rem = 1 font-size root
-*/
+@media screen and (min-width: 300px) and (max-width: 500px) {
+
+    :root {
+        box-sizing: border-box;
+        font-size: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        background-color: rgb(36, 179, 0);
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .content{
+        column-count: 1;
+    }
+
+}
+
+@media screen and (max-width: 200px) {
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        background-color: rgb(24, 0, 179);
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
