@@ -31,6 +31,9 @@ body{
      column-gap: 15px;
      column-rule: 2px solid blue;
      padding: 20px;
+     text-align: justify;
+     text-overflow: "-";
+     word-break: break-all;
 }
 
 h1 {
