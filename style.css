@@ -1,3 +1,14 @@
+@charset "utf-8";
+
+@import url('./reset.css'); 
+
+@font-face {
+    font-family: 'Rubik Moonrocks';
+    src: url('./fonts/RubikMoonrocks-Regular.ttf');
+}
+
+/* at-rules, або Директива */
+
 * {
     box-sizing: border-box;
 }
@@ -37,6 +48,7 @@ body{
 }
 
 h1 {
+    font-family: 'Rubik Moonrocks';
     font-size: 2.4em;
     font-weight: 700;
     column-span: all;
