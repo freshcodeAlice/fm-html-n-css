@@ -18,16 +18,35 @@
 </head>
 
 <body>
-    <video autoplay loop muted controls poster="./images/pic.jpg">
-        <source 
-            src="./videos/production ID_4110834.mp4"
-            type="video/mp4"
-        >
-        <source 
-            src="./videos/production-ID_4110834.webm"
-            type="video/webm"
-        >
-    </video>
+    <div class="background">
+        <!-- <section class="form-wrapper"> -->
+            <form class="form flex-column ">
+                <h2>
+                    Login
+                </h2>
+                <p>Welcome Back, Please login to your account</p>
+                <label class="flex-column ">
+                    Name
+                    <input type="email" />
+                </label>
+                <label class="flex-column ">
+                    Password
+                    <input type="password" />
+                </label>
+                <div class="row">
+                    <label>
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+                    <a>Forgot password?</a>
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a class="pink">Signup</a></p>
+            </form>
+
+<!-- 
+        </section> -->
+    </div>
 
 </body>
 
