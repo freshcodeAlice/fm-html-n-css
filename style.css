@@ -57,6 +57,19 @@ input, button {
     color: inherit;
 }
 
+input[type="checkbox"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #ff184b;
+    background-image: "\1F5F8";
+}
+
 .row {
 
 }
