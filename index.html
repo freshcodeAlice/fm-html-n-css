@@ -12,25 +12,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom-grid.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
-<header>
-    <nav>
-            <ul>
-                <li>Link 1</li>
-                <li>Link 2</li>
-                <li>Link 3</li>
-                <li>Link 4</li>
-                <li>Link 5</li>
-            </ul>
-    </nav>
-</header>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, est ullam, eos ut blanditiis harum voluptas officia perferendis sint recusandae fuga, culpa totam nisi cum nostrum! Explicabo, minus quisquam. Maxime molestiae minus fuga, neque veniam nulla vero ratione dolore omnis? Placeat sapiente optio veniam sunt possimus iure expedita ratione vel.</p>
-
+<div class="container">
+    <header class="flex-row align-center justify-between col-12 col-sm-12">
+        <img src="./images/kisspng-computer-icons-gear-clip-art-settings-ico-5ab0ec2ed82034.8505833715215442388853.jpg" class="logo"/>
+        <ul class="flex-row">
+            <li>Menu item 1</li>
+            <li>Menu item 2</li>
+            <li>Menu item 3</li>
+        </ul>
+    </header>
+    <section class="flex-column align-center justify-center col-12">
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur architecto aperiam molestias dignissimos rerum, quidem ullam sit suscipit voluptatum alias quisquam aliquid? Ea aliquam dignissimos at possimus, labore hic officiis temporibus dolore eaque. Omnis labore quidem illum deleniti quam tempora perferendis, nesciunt sapiente velit animi accusantium ut a, natus maiores!</p>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+    </section>
+    <footer class="flex-row justify-center align-center">
+        <ul class="col-6 flex-row justify-between">
+            <li>Menu item 1</li>
+            <li>Menu item 2</li>
+            <li>Menu item 3</li>
+        </ul>
+    </footer>
+</div>
 </body>
 
 </html>
