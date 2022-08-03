@@ -26,8 +26,9 @@ padding-top: 20vh;
 box-shadow: 10px 10px 109px 0px rgba(0,0,0,0.75);
 }
 
-.form * {
-    margin-top: 10px;
+.form > * {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
@@ -55,6 +56,7 @@ input, button {
     border: 1px solid white;
     background-color: transparent;
     color: inherit;
+
 }
 
 input[type="checkbox"] {
@@ -62,16 +64,46 @@ input[type="checkbox"] {
     width: 15px;
     height: 15px;
     background-color: white;
-    border-radius: 2px;
+    border-radius: 3px;
+    position: relative;
 }
 
-input[type="checkbox"]:checked {
+/* input[type="checkbox"]:checked {
     background-color: #ff184b;
-    background-image: "\1F5F8";
+} */
+
+/* input[type="checkbox"]:checked::before {
+    content: "\1F5F8";
+    position: absolute;
+    top: -2px;
+    left: 1px;
+    bottom: 0;
+    right: 0;
+} */
+
+
+/* variant 1 */
+
+input[type="checkbox"]:checked {
+    border: 4px solid #ff184b;
+}
+
+/* variant 2 */
+
+input[type="checkbox"]:checked {
+    border: 4px solid white;
+    background-color: #ff184b;
 }
 
 .row {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
 
+.row a {
+    font-size: 0.8em;
 }
 
 .pink {
