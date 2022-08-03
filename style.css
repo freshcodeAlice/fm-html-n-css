@@ -1,115 +1,48 @@
-.background {
-width: 100%;
-height: 100vh;
-/* background-color: #08070c; */
-background-image: url('./images/pic.jpg');
-padding-top: 20vh;
+nav {
+    width: 100%;
+    background-color: blueviolet;
 }
 
-/* .form-wrapper {
-
-} */
-
-.form {
-    margin: 0 auto;
-    color: white;
-    min-width: 25vw;
-    max-width: 35vw;
-    border: 1px solid white;
-    padding: 5%;
-    box-sizing: border-box;
-    border-radius: 10px;
-    background-color: #2f2f2f5e;
-    backdrop-filter: blur(10px);
-    -webkit-box-shadow: 10px 10px 109px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 109px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 109px 0px rgba(0,0,0,0.75);
-}
-
-.form > * {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-
-
-.flex-column {
+ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.form h2 {
-    font-size: 2em;
-}
 
-.form p {
+ul li {
+    background-color: rgba(255, 0, 251, 0.405);
     font-size: 1em;
+    padding: 10px;
 }
 
-label {
-    font-size: 0.8em;
-}
 
-input, button {
-    height: 30px;
-    border-radius: 8px;
-    border: 1px solid white;
-    background-color: transparent;
-    color: inherit;
+@media screen and (max-width: 800px) {
+    ul {
+        display: none;
+    }
 
-}
+    header {
+        width: 100%;
+        height: 50px;
+        background-color: blueviolet;
+        display: flex;
+    }
 
-input[type="checkbox"] {
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    border-radius: 3px;
-    position: relative;
-}
+    nav {
+        width: 50px;
+        height: 50px;
+        background-image: url('./images/menu.png');
+        margin-left: auto;
+        position: relative;
+    }
 
-/* input[type="checkbox"]:checked {
-    background-color: #ff184b;
-} */
-
-/* input[type="checkbox"]:checked::before {
-    content: "\1F5F8";
-    position: absolute;
-    top: -2px;
-    left: 1px;
-    bottom: 0;
-    right: 0;
-} */
-
-
-/* variant 1 */
-
-input[type="checkbox"]:checked {
-    border: 4px solid #ff184b;
-}
-
-/* variant 2 */
-
-input[type="checkbox"]:checked {
-    border: 4px solid white;
-    background-color: #ff184b;
-}
-
-.row {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-}
-
-.row a {
-    font-size: 0.8em;
-}
-
-.pink {
-    color: #ff184b;
-}
-
-button {
-    background-color: #ff184b;
+    nav:hover ul {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        position: absolute;
+        right: 0;
+        top: 50px;
+    }
 }
